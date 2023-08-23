@@ -32,7 +32,7 @@ func NewHttpClient(baseURL, token string) Transport {
 	header := http.Header{}
 
 	if token != "" {
-		header.Set("Autorization", token)
+		header.Set("Authorization", token)
 	}
 
 	return &clientHTTP{
